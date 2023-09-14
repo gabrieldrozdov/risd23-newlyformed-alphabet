@@ -80,34 +80,32 @@ body {
 }
 .controls button {
 	border: unset;
-	background-color: black;
+	background-color: white;
 	cursor: pointer;
 	width: 40px;
 	height: 40px;
 	display: flex;
-	fill: white;
+	fill: black;
 	align-items: center;
 	justify-content: center;
 	transition: .2s;
 	border-radius: 50%;
 	padding: 5px;
-	border: 1px solid white;
 }
 .controls button svg {
 	width: 100%;
 	height: 100%;
 }
 .controls button[data-active="1"] {
-	background-color: white;
-	fill: black;
+	background-color: black;
+	fill: white;
+	border: 2px solid white;
 }
 .controls button:hover {
-	border: 2px solid black;
-	background-color: white;
-	fill: black;
+	transform: scale(1.1);
 }
 .controls button:active {
-	opacity: .5;
+	transform: scale(0.9);
 }
 .controls button:focus {
 	outline: none;
